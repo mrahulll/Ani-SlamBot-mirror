@@ -303,7 +303,7 @@ torrents_dict = {
     'eztv': {'source': "https://slam-api.herokuapp.com/api/eztv/", 'result_str': RESULT_STR_EZTV},
     'torlock': {'source': "https://slam-api.herokuapp.com/api/torlock/", 'result_str': RESULT_STR_TORLOCK},
     'rarbg': {'source': "https://slam-api.herokuapp.com/api/rarbg/", 'result_str': RESULT_STR_RARBG},
-    'ts': {'source': "https://slam-api.herokuapp.com/api/all/", 'result_str': RESULT_STR_ALL}
+    'torrent': {'source': "https://slam-api.herokuapp.com/api/all/", 'result_str': RESULT_STR_ALL}
 }
 
 torrent_handlers = []
@@ -321,7 +321,7 @@ def searchhelp(update, context):
 • /eztv <i>[search query]</i>
 • /torlock <i>[search query]</i>
 • /rarbg <i>[search query]</i>
-• /ts <i>[search query]</i>
+• /torrent <i>[search query]</i>
 '''
     update.effective_message.reply_photo(IMAGE_URL, help_string, parse_mode=ParseMode.HTML)
     

@@ -312,16 +312,16 @@ for command, value in torrents_dict.items():
 
 def searchhelp(update, context):
     help_string = '''
-• /nyaa 
-• /sukebei
-• /1337x 
-• /piratebay 
-• /tgx
-• /yts 
-• /eztv
-• /torlock 
-• /rarbg 
-• /torrent 
+• /nyaa - [search query]
+• /sukebei -[search query]
+• /1337x - [search query]
+• /piratebay - [search query]
+• /tgx - [search query]
+• /yts - [search query]
+• /eztv - [search query]
+• /torlock - [search query]
+• /rarbg - [search query]
+• /torrent  [search query] 
 '''
     update.effective_message.reply_photo(IMAGE_URL, help_string, parse_mode=ParseMode.HTML)
     
